@@ -25,60 +25,58 @@ type Props = {
 
 const Home = ({ pageInfo, experiences, project, socials, skills }: Props) => {
   return (
-    <div>
-      <h1>hello brooo</h1>
+ 
+    <div
+      className="bg-[rgba(36,36,36)] text-white  h-screen snap-y snap-mandatory
+     overflow-y-scroll scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 overflow-x-hidden z-0"
+    >
+      <Head>
+        <title>Feramiz portfolio</title>
+      </Head>
+
+      <Header socials={socials} />
+      <section id="hero" className="snap-start ">
+        <Hero pageInfo={pageInfo} />
+      </section>
+
+      <section id="about" className="snap-center">
+        <About pageInfo={pageInfo} />
+      </section>
+
+      <section id="experience" className="snap-center">
+        <WorkExperience experiences={experiences} />
+      </section>
+
+      <section id="skills" className="snap-start">
+        <Skills skills={skills} />
+      </section>
+
+      <section id="projects" className="snap-start">
+        <Projects project={project} />
+      </section>
+
+      <section id="contact" className="snap-start">
+        <ContactMe pageInfo={pageInfo}/>
+      </section>
     </div>
-    // <div
-    //   className="bg-[rgba(36,36,36)] text-white  h-screen snap-y snap-mandatory
-    //  overflow-y-scroll scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 overflow-x-hidden z-0"
-    // >
-    //   <Head>
-    //     <title>Feramiz portfolio</title>
-    //   </Head>
-
-    //   <Header socials={socials} />
-    //   <section id="hero" className="snap-start ">
-    //     <Hero pageInfo={pageInfo} />
-    //   </section>
-
-    //   <section id="about" className="snap-center">
-    //     <About pageInfo={pageInfo} />
-    //   </section>
-
-    //   <section id="experience" className="snap-center">
-    //     <WorkExperience experiences={experiences} />
-    //   </section>
-
-    //   <section id="skills" className="snap-start">
-    //     <Skills skills={skills} />
-    //   </section>
-
-    //   <section id="projects" className="snap-start">
-    //     <Projects project={project} />
-    //   </section>
-
-    //   <section id="contact" className="snap-start">
-    //     <ContactMe pageInfo={pageInfo}/>
-    //   </section>
-    // </div>
   );
 };
 export default Home;
 
-// export const getStaticProps: GetStaticProps<Props> = async () => {
-//   const project: Project[] = await fetchProjects();
-//   const experiences: Experience[] = await fetchExperience();
-//   const socials: Social[] = await fetchSocials();
-//   const skills: Skill[] = await fetchSkills();
-//   const pageInfo: PageInfo = await fetchPageInfo();
-//   return {
-//     props: {
-//       project,
-//       skills,
-//       pageInfo,
-//       socials,
-//       experiences,
-//     },
-//     revalidate: 10,
-//   };
-// };
+export const getStaticProps: GetStaticProps<Props> = async () => {
+  const project: Project[] = await fetchProjects();
+  const experiences: Experience[] = await fetchExperience();
+  const socials: Social[] = await fetchSocials();
+  const skills: Skill[] = await fetchSkills();
+  const pageInfo: PageInfo = await fetchPageInfo();
+  return {
+    props: {
+      project,
+      skills,
+      pageInfo,
+      socials,
+      experiences,
+    },
+    revalidate: 10,
+  };
+};
