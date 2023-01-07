@@ -29,10 +29,9 @@
     "react-hook-form": "^7.41.2",
     "react-simple-typewriter": "^5.0.1",
     "react-social-icons": "^5.15.0",
-    "sanity": "^3.1.2",
+    "sanity": "^3.1.4",
     "tailwind-scrollbar": "^2.1.0",
-    "typescript": "4.9.4",
-    "vercel": "^19.1.2"
+    "typescript": "4.9.4"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
