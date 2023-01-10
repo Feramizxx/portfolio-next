@@ -1,5 +1,4 @@
-import React from "react";
-import { PhoneIcon, MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
+import { PhoneIcon, MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid/index";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { motion } from "framer-motion";
 import { PageInfo } from "../typing";

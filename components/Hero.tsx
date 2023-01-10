@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Fragment } from "react"
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import { PageInfo } from "../typing";
 import { motion } from "framer-motion";
@@ -20,7 +19,6 @@ export default function Hero({ pageInfo }: Props) {
     delaySpeed: 2000,
   });
 
-  // console.log(urlFor(pageInfo?.heroImage));
   return (
     <div className="flex  flex-col  text-center h-screen justify-center items-center space-y-8 overflow-hidden ">
       <BackgroundCircles />

@@ -1,9 +1,7 @@
 import { motion } from "framer-motion";
-import { Fragment } from "react"
 import { urlFor } from "../sanity";
 import { Skill } from "../typing";
 type Props = {
-  // directionLeft: boolean;
   Skill: Skill;
   directionLeft: boolean;
 };
@@ -11,7 +9,6 @@ type Props = {
 export default function SkillItems({ Skill, directionLeft }: Props) {
   return (
     <div className="group relative  flex cursor-pointer">
-      {/* <h1>skill</h1> */}
       <motion.img
         initial={{ x: directionLeft ? -200 : 200 }}
         whileInView={{ x: 0, opacity: 1 }}

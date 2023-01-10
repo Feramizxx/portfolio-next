@@ -43,7 +43,7 @@ export interface Project extends SanityBody {
 }
 
 export interface Experience extends SanityBody {
-  _type: "experience";
+  _type: "experiences";
   company: string;
   companyImage: Image;
   dateStarted: date;
@@ -62,7 +62,7 @@ export interface Technology extends SanityBody {
 }
 
 export interface Social extends SanityBody {
-  _type: "social";
+  _type: "socials";
   title: string;
   url: string;
 }

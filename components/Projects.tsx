@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Fragment } from "react"
 import { Project } from "../typing";
 import { urlFor } from "../sanity";
 motion;
@@ -8,13 +7,8 @@ type Props = {
   project: Project[]
 };
 
-export default function Projects({project}: Props) {
-  const projectData = [1, 2, 3, 4, 5];
-
- 
+export default function Projects({project}: Props) { 
   return (
-
-
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
@@ -57,9 +51,6 @@ export default function Projects({project}: Props) {
             </div>
           );
         })}
-
-        {/* projects */}
-        {/* projects */}
       </div>
       <div className="w-full top-[30%] absolute bg-[#F7AB0A]/10 left-0 h-[500px] -skew-y-12" />
     </motion.div>

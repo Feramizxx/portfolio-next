@@ -2,9 +2,7 @@
 
 
 const nextConfig = {
-  future: {
-    webpack5: true
-  },
+
   reactStrictMode: true,
  
   typescript: {

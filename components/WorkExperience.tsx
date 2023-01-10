@@ -1,4 +1,3 @@
-import { Fragment } from "react"
 import { motion } from "framer-motion";
 import ExperienceCard from "./ExperienceCard";
 import { Experience } from "../typing";

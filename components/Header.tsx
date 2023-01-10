@@ -2,7 +2,6 @@ import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import { Social } from "../typing";
-import { Fragment } from "react"
 
 type Props = {
   socials: Social[];
@@ -37,17 +36,6 @@ export default function Header({ socials }: Props) {
             />
           );
         })}
-        {/* <SocialIcon
-          url="https://facebook.com/feramiz.bahaddinov"
-        
-        />
-       
-
-        <SocialIcon
-          url="https://facebook.com/feramiz.bahaddinov"
-          fgColor="gray"
-          bgColor="transparent"
-        /> */}
       </motion.div>
       <motion.div
         initial={{ x: 500, scale: 0.5, opacity: 0 }}

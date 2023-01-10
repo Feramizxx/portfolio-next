@@ -1,4 +1,3 @@
-import { Fragment } from "react"
 import { motion } from "framer-motion";
 import SkillItem from "./Skill";
 import { Skill } from "../typing";
@@ -30,13 +29,7 @@ export default function Skills({skills}: Props) {
         {skills.slice(skills.length/2, skills.length).map((skill,index)=>{
         return <SkillItem key={skill._id} Skill={skill} directionLeft />
        })}
-       {/* {skills.map((skill)=>{ 
-        <SkillItem  key={index} Skill={skill}/>
-       })} */}
-
        </div>
-
-
     </motion.div>
   );
 }

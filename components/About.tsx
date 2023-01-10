@@ -1,4 +1,3 @@
-import { Fragment } from "react"
 import { motion } from "framer-motion";
 import { urlFor } from "../sanity";
 import { PageInfo } from "../typing";
